@@ -8,7 +8,8 @@ Studies have found that Earthquakes that hit at night are the most dangerous one
 
 How it works?
 --------------
-When the device notices seismic activity of certain Richter scale:-
+When the device notices seismic activity of certain Richter scale.
+
 1. Device is triggered
 2. Lights turn on
 3. Alarm goes off
@@ -18,6 +19,7 @@ When the device notices seismic activity of certain Richter scale:-
 Implementation
 ---------------
 Below are the things required for building this project.
+
 1. Bredboard-1
 2. Photon-1
 3. Piezo Seismic sensor-1
