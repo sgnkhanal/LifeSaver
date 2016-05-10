@@ -2,12 +2,12 @@
 This idea initially came to me when I was choosing a project for my Grad school. It is currently in Prototype phase.
 
 Why this project?
------------------
+------------------
 My family live in Nepal, a Himalayan country sitting in the bed rocks of Mount Everest. In 2015, a 7.8 Richter scale earthquake claimed lives over 8000 in a single day. The trauma the residents in the country had to go though was unimaginable. Then there were abroad residents like me worried about our dear ones and their safety.
 Studies have found that Earthquakes that hit at night are the most dangerous ones claiming 3-4 times more casualties than in day. This project aims to provide alert to the residents in a house as soon as the Earthquake hits. 
 
 How it works?
--------------
+--------------
 When the device notices seismic activity of certain Richter scale:-
 1. Device is triggered
 2. Lights turn on
