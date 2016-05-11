@@ -3,8 +3,11 @@ This idea initially came to me when I was choosing a project for my Grad school.
 
 Why this project?
 ------------------
-My family live in Nepal, a Himalayan country sitting in the bed rocks of Mount Everest. In 2015, a 7.8 Richter scale earthquake claimed lives over 8000 in a single day. The trauma the residents in the country had to go though was unimaginable. Then there were abroad residents like me worried about our dear ones and their safety.
-Studies have found that Earthquakes that hit at night are the most dangerous ones claiming 3-4 times more casualties than in day. This project aims to provide alert to the residents in a house as soon as the Earthquake hits. 
+My family lives in Nepal, a Himalayan country sitting in the bed rocks of Mount Everest. In 2015, a 7.8 Richter scale earthquake claimed lives over 8000 in a single day. The trauma the residents in the country had to go though was unimaginable. Then there were abroad residents like me worried about our dear ones and their safety.
+
+- Studies have found that Earthquakes that hit at night are the most dangerous ones claiming 3-4 times more casualties than in day. 
+- A big percentage of the casualties are elderly and children. 
+- This project aims to provide alert to the residents in a house when they are asleep as soon as the Earthquake hits. 
 
 How it works?
 --------------
@@ -14,7 +17,7 @@ When the device notices seismic activity of certain Richter scale.
 2. Lights turn on
 3. Alarm goes off
 4. Automated text message is sent to the loved ones.
-5. Safe Button - future plan is to add a button which the residents can press when they are safe. It triggers another automated messaging to the list of configured phones.
+5. Safe Button - this is the only manual intervention required from the user. When they are safe from the earthquake, they can press the safe button which triggers another text message to their loved ones.
 
 Implementation
 ---------------
@@ -26,8 +29,8 @@ Below are the things required for building this project.
 4. RGB light-1
 5. Piezo buzzer-1
 6. Press button
-6. Wires
-7. Cell phone
+6. Jumper Wires
+7. Cell phone with phone network or smart tabs with IF app.
 
 Setup Instructions
 -------------------
