@@ -10,9 +10,7 @@
 //and subtracting the false alerts.
 int minScale = 1500;
 int measuredScale = 0;
-
-// for now defaulted to my home residence in Nepal.
-String location = "Kathmandu"; 
+String location = "Kathmandu"; // for now defaulted to my home residence in Nepal.
 
 //define the pins for output
 int buzzerPin = D7;
@@ -22,23 +20,24 @@ int turnLight = D7;
 int quakeSensor = A0;
 int safeButton = A5;
 
+int safeButtonState = 0;
+
 void setup() {
+
     pinMode(quakeSensor, INPUT);
-    // pinMode(safeButton, INPUT);
+    pinMode(safeButton, INPUT);
     pinMode(turnLight, OUTPUT);
     pinMode(buzzerPin, OUTPUT);
+
 }
 
 void loop() {
     
     //Safe button implementation
-    // int safeButtonState=0;
-    // safeButtonState = digitalRead(safeButton);
-    
-    if(digitalRead(safeButton)) {
-        Spark.publish("safe", "Safe");
+    safeButtonState = digitalRead(safeButton);
+    if(safeButtonState == HIGH) {
+        Spark.publish("safe", "safe");
     }
-    // safeButtonState = HIGH;
     
     //read the analog data
     measuredScale = (analogRead(quakeSensor));
@@ -49,7 +48,7 @@ void loop() {
     // // 3. Turn the buzzer on
     // // 4. delay for 10 seconds and loop again.
     if(measuredScale > minScale) {
-        //publish events when measured scale hits minimum scale.
+
         Spark.publish("alert", "Earthquake");
         Spark.publish("measuredScale", String(measuredScale));
         Spark.publish("location", location);
@@ -67,7 +66,6 @@ void loop() {
     }
 }   
 
-//buzzer beep
 void beep(unsigned char delayms){
   analogWrite(buzzerPin, HIGH);      // Almost any value can be used except 0 and 255
                            // experiment to get the best tone
